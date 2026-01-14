@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Center main content */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;       /* half viewport height for vertical centering */
+    text-align: center;
+}
+
+/* Confirmation message */
+.order_confirmed {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace; /* match site font */
+    font-size: 36px;
+    line-height: 1.5;
+}

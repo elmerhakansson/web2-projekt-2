@@ -1,0 +1,42 @@
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Products</title>
+  <link rel="stylesheet" href="products_page_1.css">
+  <link rel="stylesheet" href="transitions.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="header">
+      <img src="logo.png" alt="Logo" class="logo">
+      <nav class="nav">
+        <a href="products_page_1.html">Our Products</a>
+        <a href="home_page.html">Home</a>
+        <a href="contact_info_page_1.html">Information</a>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container">
+        <img src="blank.png" class="product-image" alt="Product Image">
+        <textarea class="textbox" readonly>
+Readonly text
+        </textarea>
+        <button id="place-order">Place order</button>
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    const button = document.getElementById('place-order');
+
+    button.addEventListener('click', function() {
+      window.location.href = 'https://buy.stripe.com/test_aFa28tdvzg4jbMcbsr6Vq01';
+    });
+  </script>
+
+  <script src="transitions.js"></script>
+</body>
+</html>

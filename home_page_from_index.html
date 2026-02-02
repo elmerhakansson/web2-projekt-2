@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="css/home_page.css">
+  <style>
+    /* White overlay starts fully opaque */
+    #page-transition {
+      position: fixed;
+      inset: 0;
+      background: white;
+      opacity: 1;               /* fully white on load */
+      transition: opacity 4.6s ease;
+      z-index: 9999;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page-transition"></div>
+
+  <div class="page">
+    <header class="header">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <nav class="nav">
+        <a href="products_page_1.html">Our Products</a>
+        <b><a href="home_page.html">Home</a></b>
+        <a href="contact_info_page_1.html">Information</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <div class="slideshow">
+        <img id="slideshow-image" src="images/blank_1.png" alt="Slideshow image">
+      </div>
+    </main>
+  </div>
+
+  <script src="js/slideshow.js"></script>
+  <script>
+    // Fade the white overlay out once page loads
+    window.addEventListener("load", () => {
+      const transition = document.getElementById("page-transition");
+      requestAnimationFrame(() => {
+        transition.style.opacity = "0";
+      });
+    });
+    // Showcase
+    window.addEventListener("load", () => {
+      const transition = document.getElementById("slideshow_transition");
+      requestAnimationFrame(() => {
+        transition.style.opacity = "0";
+      });
+    });
+  </script>
+
+</body>
+</html>

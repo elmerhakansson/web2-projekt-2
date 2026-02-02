@@ -28,4 +28,14 @@
 
   <script src="js/slideshow.js"></script>
 </body>
+
+<div id="page-transition"></div>
+<script>
+  window.addEventListener("load", () => {
+    const transition = document.getElementById("page-transition");
+    requestAnimationFrame(() => {
+      transition.style.opacity = "0";
+    });
+  });
+</script>
 </html>

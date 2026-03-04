@@ -1,0 +1,10 @@
+body {
+  font-size: 20px;
+  margin: 0;
+  height: 100vh;              /* Make body fill full viewport height */
+  display: flex;              /* Enable Flexbox */
+  justify-content: center;    /* Horizontal center */
+  align-items: center;        /* Vertical center */
+  font-family: 'Courier New', Courier, monospace;
+  background: #ffffff;
+}
